@@ -15,12 +15,13 @@
       "clock"
     ],
     "modules-right": [
+      "keyboard-state",
       "battery",
       "pulseaudio",
       "backlight",
-        //"tray",
-        "network",
-        "custom/power"
+      //"tray",
+      "network",
+      "custom/power"
     ],
      //Modules configuration
      "hyprland/workspaces": {
@@ -30,15 +31,12 @@
      },
      "hyprland/window": {
        "format": "{}",
-       "rewrite": {
-         "(.*) — Mozilla Firefox": "🌎 $1",
-         "(.*) - fish": "> [$1]"
-       },
+       "max-length": 30,
        "separate-outputs": true
      },
      "tray": {
         // "icon-size": 21,
-        "spacing": 10,
+        "spacing": 10
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
@@ -109,5 +107,17 @@
         "suspend": "systemctl suspend",
         "hibernate": "systemctl hibernate"
       }
+     },
+     "keyboard-state": {
+       "numlock": true,
+       "capslock": true,
+       "format": {
+         "numlock": "N {icon}",
+         "capslock": "C {icon}"
+       },
+       "format-icons": {
+         "locked": "",
+         "unlocked": ""
+       }
      }
 }
