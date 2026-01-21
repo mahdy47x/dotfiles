@@ -26,6 +26,11 @@ return {
     end,
     ft = { "markdown" },
   },
+  {
+    -- TODO
+    -- find a way to make nvim tree show files inside .gitignore
+    "nvim-tree/nvim-tree.lua",
+  },
 
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
