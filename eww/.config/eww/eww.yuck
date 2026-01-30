@@ -1,0 +1,28 @@
+(defwindow power_menu
+  :monitor 0
+  :stacking "fg"
+  :wm-ignore "true"
+  :geometry (geometry 
+              :anchor "right top"
+              :width "8%"
+              :hight "0%"
+              :x "0%"
+              :y "0%")
+  (power_menu_layout))
+
+(defwidget power_menu_layout[]
+  (box :class "layout_box"
+  (buttons :shutdown "shutdown" :reboot "reboot"
+  :logout "loginctl kill-session self" :hibernate "systemctl hibernate"
+  :shutdown_icon "⏻  shutdown" :reboot_icon "  reboot" :logout_icon "󰍃  logout" :hibernate_icon "  hibernate")))
+
+
+(defwidget buttons [shutdown shutdown_icon reboot reboot_icon 
+                    logout logout_icon hibernate hibernate_icon]
+  (box :class "btns-box" :spacing 5
+    :orientation "v"
+    (button :onclick logout logout_icon)
+    (button :onclick hibernate hibernate_icon)
+    (button :onclick reboot reboot_icon)
+    (button :onclick shutdown shutdown_icon)
+    ))

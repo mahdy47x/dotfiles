@@ -99,14 +99,7 @@
       //TODO
       "format" : "⏻ ",
       "tooltip": false,
-      "menu": "on-click",
-      "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-      "menu-actions": {
-        "shutdown": "shutdown",
-        "reboot": "reboot",
-        "suspend": "systemctl suspend",
-        "hibernate": "systemctl hibernate"
-      }
+      "on-click": "eww open --toggle power_menu"
      },
      "keyboard-state": {
        "numlock": true,

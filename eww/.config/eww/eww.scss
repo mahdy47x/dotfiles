@@ -1,0 +1,26 @@
+
+* {all: unset;}
+
+.btns-box {
+ font-size: 10;
+
+  button {
+    padding: 3px;
+    border-radius: 20px;
+    background-color: rgba(#1B1F28, 0.7);
+    color: white;
+
+    &:hover {
+      transition: 200ms linear background-color, border-radius;
+      background-color: rgba(#3E4349, 0.7);
+    }
+
+    &:last-child {
+      color: #FF5555;
+    }
+  }
+}
+
+.layout_box {
+  padding: 5px;
+}
