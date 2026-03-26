@@ -12,8 +12,10 @@
 
 (defwidget power_menu_layout[]
   (box :class "layout_box"
-  (buttons :shutdown "shutdown" :reboot "reboot"
-  :logout "loginctl kill-session self" :hibernate "systemctl hibernate"
+  (buttons 
+  ;;TODO notify when shutdown is pressed with the time till shutdown (if shutdown command is used)
+  :shutdown "systemctl poweroff" :reboot "reboot"
+  :logout "loginctl kill-session self" :hibernate "sync & systemctl hibernate & eww open --toggle power_menu"
   :shutdown_icon "⏻  shutdown" :reboot_icon "  reboot" :logout_icon "󰍃  logout" :hibernate_icon "  hibernate")))
 
 
