@@ -21,7 +21,7 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="fastfetch*:clear:cc*:history*"
 
 # java path
-export JAVA_HOME=/usr/lib/jvm/java-25-openjdk/ 
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk/ 
 export PATH=$JAVA_HOME/bin:$PATH
 
 # scripts path
