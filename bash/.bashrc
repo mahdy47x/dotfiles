@@ -28,3 +28,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 export SCRIPTS="~/Scripts/"
 export PATH=$SCRIPTS:$PATH
 
+alias svim="sudo -E nvim"
