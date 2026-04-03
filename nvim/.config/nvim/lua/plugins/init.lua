@@ -16,10 +16,7 @@ return {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     build = "cd app && yarn install",
---    vim.g.mkdp_browser = function(url)
---      local command =  "librewolf -P \"MDpreview\" " .. url
---      os.execute(command)
---    end,
+
     init = function()
       vim.g.mkdp_filetypes = { "markdown" }
       vim.g.mkdp_theme = 'dark'
