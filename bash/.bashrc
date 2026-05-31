@@ -17,8 +17,7 @@ PS1='[\e[31m\u\e[0m@\e[34m\h \e[0m\W]\$ '
 # auto cd when entering a dir
 shopt -s autocd
 
-export HISTCONTROL=ignoreboth
-export HISTIGNORE="fastfetch*:clear:cc*:history*"
+export HISTCONTROL=ignoreboth:erasedups
 
 # java path
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk/ 
