@@ -28,6 +28,6 @@ export SCRIPTS="~/Scripts/"
 export PATH=$SCRIPTS:$PATH
 
 alias svim="sudo -E nvim"
-zathura(){
+z(){
   command zathura $@ >/dev/null 2>&1 &
 }
