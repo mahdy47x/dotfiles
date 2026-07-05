@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+if [[ -z $NVIM ]]; then
+  exec nvim -c term
+fi
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -30,4 +33,8 @@ export PATH=$SCRIPTS:$PATH
 alias svim="sudo -E nvim"
 z(){
   command zathura $@ >/dev/null 2>&1 &
+}
+
+nvim(){
+  ~/Scripts/v-attach $@
 }
