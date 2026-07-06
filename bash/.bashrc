@@ -2,7 +2,7 @@
 # ~/.bashrc
 #
 
-if [[ -z $NVIM ]]; then
+if [[ -z $NVIM && $DISPLAY ]]; then
   exec nvim -c term
 fi
 # If not running interactively, don't do anything
